@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+
+#container > div{
+    border: 2px solid black;
+    background-color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+#container{
+    margin: 0 auto;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+}
