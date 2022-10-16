@@ -1,5 +1,6 @@
 const TicTacToe = (()=>{
     const container = document.querySelector("#container")
+    const restartBtn = document.querySelector("button")
     let whosTurn = 0
 
     const gameBoard = (()=>{
@@ -14,16 +15,22 @@ const TicTacToe = (()=>{
                 if(whosTurn % 2 == 0){
                     square.textContent = player1.sign
                     tiles[specifik] = player1.sign
-                    console.log(tiles)
                 }else{
                     square.textContent = player2.sign
                     tiles[specifik] = player2.sign
-                    console.log(tiles)
                 }
+                console.log(tiles)
             whosTurn++}
         }
 
            square.addEventListener("click", chooseTile)
+
+           restartBtn.addEventListener("click", function(){
+            tiles.forEach(tile => {
+                tiles[specifik] = specifik
+                square.textContent = ""
+            });
+           })
         });
     })();
 
