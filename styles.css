@@ -19,3 +19,12 @@
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
 }
+
+#layout{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 500px;
+}
+.player{
+    background-color: #ccc;
+}
