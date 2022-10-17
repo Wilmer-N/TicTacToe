@@ -9,8 +9,8 @@ const TicTacToe = (()=>{
     const secondPlayerScore = document.querySelector("#score2")
     const resetScore = document.querySelector("#reset")
 
-    Player1Score = 0
-    Player2Score = 0
+    let Player1Score = 0
+    let Player2Score = 0
 
     function displayScore(){
     firstPlayerScore.textContent = Player1Score
@@ -23,7 +23,7 @@ const TicTacToe = (()=>{
         displayScore()
     })
 
-    whosTurn = 0
+   let whosTurn = 0
     gamePlay = false
 
     const player = (name, sign) =>{
@@ -93,6 +93,9 @@ const TicTacToe = (()=>{
                 whosTurn = 0
                 gamePlay = false
             }
+        }
+        if(Player1Score > 10){
+            console.log("iw")
         }
 
 })();
