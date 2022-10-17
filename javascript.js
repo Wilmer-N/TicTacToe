@@ -54,8 +54,9 @@ const TicTacToe = (()=>{
                             square.textContent = player2.sign
                             tiles[specifik] = player2.sign
                         }
+                        whosTurn++
                     WhoWin(tiles, specifik, secondPlayerInput.value, firstPlayerInput.value)    
-                    whosTurn++}
+                    }
                     }
     
                    square.addEventListener("click", chooseTile)
@@ -88,7 +89,7 @@ const TicTacToe = (()=>{
                     winDisplay.textContent = `${player2} wins`
                 }
                 gamePlay = false
-            }else if(whosTurn == 8){
+            }else if(whosTurn == 9){
                 winDisplay.textContent = "draw" 
                 whosTurn = 0
                 gamePlay = false
