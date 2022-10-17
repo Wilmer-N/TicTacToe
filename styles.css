@@ -27,4 +27,10 @@
 }
 .player{
     background-color: #ccc;
+    padding: 2rem;
+}
+
+#win{
+    text-align: center;
+    font-size: 4rem;
 }
